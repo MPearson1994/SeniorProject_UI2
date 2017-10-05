@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2014 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+    <string name="cardView_Weather_Card">
+        Concerned about the weather in your area? Check to see what attire suits your neck of the woods
+    </string>
+    <string name="cardView_Calendar_Card">
+        Have a meeting or a planned event that requires a specific outfit? Schedule your special attire for a special event
+    </string>
+    <string name="cardView_Favorites_Card">
+        View all your favorite selections of clothing
+    </string>
+    <string name="cardView_Closet_Card">
+        View the numorous clothing inside your closet
+    </string>
+    <string name="cardView_Camera_Card">
+        Add some clothing to your closet by simply using your phone's camera
+    </string>
+    <string name="cardView_Settings_Card">
+        Something not working right? Check and edit your settings to perfection
+    </string>
+</resources>
