@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
  Copyright 2014 The Android Open Source Project
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,21 +15,22 @@
 -->
 <resources>
     <string name="cardView_Weather_Card">
-        Concerned about the weather in your area? Check to see what attire suits your neck of the woods
+        Concerned about the weather in your area? Check to see what attire is best for the weather.
     </string>
     <string name="cardView_Calendar_Card">
-        Have a meeting or a planned event that requires a specific outfit? Schedule your special attire for a special event
+        Have a planned event that requires a specific outfit? Schedule your special attire here
     </string>
     <string name="cardView_Favorites_Card">
         View all your favorite selections of clothing
     </string>
     <string name="cardView_Closet_Card">
-        View the numorous clothing inside your closet
+        View the numerous clothing inside your closet
     </string>
     <string name="cardView_Camera_Card">
-        Add some clothing to your closet by simply using your phone's camera
+        Add some clothing to your closet by simply using your phone\'s camera
     </string>
     <string name="cardView_Settings_Card">
         Something not working right? Check and edit your settings to perfection
     </string>
+    <string name="title_activity_camera">cameraActivity</string>
 </resources>

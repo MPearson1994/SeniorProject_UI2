@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
  Copyright 2014 The Android Open Source Project
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,22 +14,31 @@
  limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.cardview"
+    package="com.example.myleslab.seniorproject_ui2"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".CardViewActivity"
-            android:label="@string/app_name" >
+            android:name=".CardView_Menu"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".cameraActivity"
+            android:label="@string/title_activity_camera"
+            android:parentActivityName=".CardView_Menu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myleslab.seniorproject_ui2.CardView_Menu" />
         </activity>
     </application>
 
