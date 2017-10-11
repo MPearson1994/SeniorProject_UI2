@@ -13,7 +13,7 @@ public class CardView_Menu extends Activity {
     Intent nScreen;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragmentcard_view);
 
@@ -48,7 +48,7 @@ public class CardView_Menu extends Activity {
         cameraCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nScreen = new Intent(CardView_Menu.this, cameraActivity.class);
+                nScreen = new Intent(getParent(), Camera.class);
                 startActivity(nScreen);
             }
         });

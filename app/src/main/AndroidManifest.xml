@@ -14,9 +14,12 @@
  limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myleslab.seniorproject_ui2"
     android:versionCode="1"
     android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -33,13 +36,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".cameraActivity"
-            android:label="@string/title_activity_camera"
+            android:name=".Camera"
             android:parentActivityName=".CardView_Menu">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.myleslab.seniorproject_ui2.CardView_Menu" />
+
         </activity>
+
     </application>
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="26.0.0-alpha1"
+        tools:replace="android:value" />
 
 </manifest>
