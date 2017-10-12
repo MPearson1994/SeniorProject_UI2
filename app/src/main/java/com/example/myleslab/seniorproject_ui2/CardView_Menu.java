@@ -48,7 +48,7 @@ public class CardView_Menu extends Activity {
         cameraCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nScreen = new Intent(getParent(), Camera.class);
+                nScreen = new Intent(CardView_Menu.this, Camera.class);
                 startActivity(nScreen);
             }
         });

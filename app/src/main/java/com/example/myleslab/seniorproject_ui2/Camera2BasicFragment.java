@@ -414,8 +414,8 @@ public class Camera2BasicFragment extends Fragment
         }
     }
 
-    public static Camera2BasicFragment newInstance() {
-        return new Camera2BasicFragment();
+    public static Fragment newInstance() {
+        return Camera2BasicFragment.newInstance();
     }
 
     @Override
@@ -592,7 +592,7 @@ public class Camera2BasicFragment extends Fragment
             // Currently an NPE is thrown when the Camera2API is used but not supported on the
             // device this code runs.
             ErrorDialog.newInstance(getString(R.string.camera_error))
-                    .show(getChildFragmentManager(), FRAGMENT_DIALOG);
+                    .show(this.getChildFragmentManager(), FRAGMENT_DIALOG);
         }
     }
 
