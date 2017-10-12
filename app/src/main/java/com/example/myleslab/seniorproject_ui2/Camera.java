@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 
 public class Camera extends Activity {
+
+    String fragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

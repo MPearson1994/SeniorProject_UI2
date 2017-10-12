@@ -47,4 +47,8 @@
         This device doesn\'t support Camera2 API.
     </string>
 
+    <string name="intro_message">
+        Use your device\'s Camera to add clothing to your closet
+    </string>
+
 </resources>
