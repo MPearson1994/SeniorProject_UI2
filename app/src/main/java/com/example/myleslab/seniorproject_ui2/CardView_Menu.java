@@ -56,7 +56,8 @@ public class CardView_Menu extends Activity {
         weatherCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                nScreen = new Intent( CardView_Menu.this, Weather.class);
+                startActivity(nScreen);
             }
         });
 

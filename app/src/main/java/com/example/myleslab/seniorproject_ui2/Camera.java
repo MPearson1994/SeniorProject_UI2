@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
-
 public class Camera extends Activity{
     FragmentActivity fragmentActivity = Camera2BasicFragment.newInstance().getActivity();
     @Override
@@ -13,7 +12,7 @@ public class Camera extends Activity{
         setContentView(R.layout.activity_camera);
         if (null == savedInstanceState) {
             fragmentActivity.getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, Camera2BasicFragment.newInstance())
+                    .add(R.id.container, new Camera2BasicFragment())
                     .commit();
         }
     }
