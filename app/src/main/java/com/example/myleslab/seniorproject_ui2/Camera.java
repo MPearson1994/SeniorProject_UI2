@@ -1,18 +1,17 @@
 package com.example.myleslab.seniorproject_ui2;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 
-public class Camera extends Activity{
-    FragmentActivity fragmentActivity = Camera2BasicFragment.newInstance().getActivity();
+public class Camera extends AppCompatActivity{
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
         if (null == savedInstanceState) {
-            fragmentActivity.getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new Camera2BasicFragment())
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, new Camera2BasicFragment().newInstance())
                     .commit();
         }
     }

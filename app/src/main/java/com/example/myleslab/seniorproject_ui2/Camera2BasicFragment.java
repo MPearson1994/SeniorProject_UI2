@@ -414,8 +414,9 @@ public class Camera2BasicFragment extends Fragment
         }
     }
 
-    public static Fragment newInstance() {
-        return Camera2BasicFragment.newInstance();
+    //Check here for possible problems with creating a new instance of the camera fragment
+    public static Camera2BasicFragment newInstance() {
+        return new Camera2BasicFragment();
     }
 
     @Override
