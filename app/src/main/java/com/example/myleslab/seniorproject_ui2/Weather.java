@@ -31,7 +31,7 @@ public class Weather extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId() == R.layout.fragment_weather){
+        if(item.getItemId() == R.id.change_city){
             showInputDialog();
         }
         return false;

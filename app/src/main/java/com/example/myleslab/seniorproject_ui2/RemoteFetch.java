@@ -15,7 +15,7 @@ import java.net.URL;
 
 public class RemoteFetch {
     private static final String OPEN_WEATHER_MAP_API =
-            "http://api.openweathermap.org/data/2.5/weather?q=%s&units=metric";
+            "http://api.openweathermap.org/data/2.5/weather?q=Nashville";
 
     public static JSONObject getJSON(Context context, String city){
         try {
@@ -23,7 +23,7 @@ public class RemoteFetch {
             HttpURLConnection connection =
                     (HttpURLConnection)url.openConnection();
 
-            connection.addRequestProperty("x-api-key",
+            connection.addRequestProperty("c556e2f979775773d2c16fa38b813cc1",
                     context.getString(R.string.open_weather_maps_app_id));
 
             BufferedReader reader = new BufferedReader(
