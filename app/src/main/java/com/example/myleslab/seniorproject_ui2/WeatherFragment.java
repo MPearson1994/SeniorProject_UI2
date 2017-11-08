@@ -79,8 +79,7 @@ public class WeatherFragment extends Fragment {
     private void renderWeather(JSONObject json){
         try {
             cityField.setText(json.getString("name").toUpperCase(Locale.US) +
-                    ", " +
-                    json.getJSONObject("sys").getString("country"));
+                    ", " + json.getJSONObject("sys").getString("country"));
 
             JSONObject details = json.getJSONArray("weather").getJSONObject(0);
             JSONObject main = json.getJSONObject("main");

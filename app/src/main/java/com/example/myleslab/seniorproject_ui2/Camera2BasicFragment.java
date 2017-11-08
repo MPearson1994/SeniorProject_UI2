@@ -53,6 +53,7 @@ import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
@@ -67,6 +68,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
@@ -74,6 +76,7 @@ import java.util.concurrent.TimeUnit;
 public class Camera2BasicFragment extends Fragment
         implements View.OnClickListener, ActivityCompat.OnRequestPermissionsResultCallback {
 
+    public String fileOption = null;
     /**
      * Conversion from screen rotation to JPEG orientation.
      */
@@ -432,10 +435,11 @@ public class Camera2BasicFragment extends Fragment
         mTextureView = (AutoFitTextureView) view.findViewById(R.id.texture);
     }
 
+
+    Menu menuObj;
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mFile = new File(getActivity().getExternalFilesDir(null), "pic.jpg");
     }
 
     @Override
@@ -768,6 +772,8 @@ public class Camera2BasicFragment extends Fragment
      */
     private void takePicture() {
         lockFocus();
+        int date = new Date().getDate();
+        mFile = new File(getActivity().getExternalFilesDir(null),"pic_"+ this.fileOption+ "_"+ date +".jpg"); //Creates file and Names it
     }
 
     /**

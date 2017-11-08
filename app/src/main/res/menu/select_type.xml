@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Select Outfit">
+        <group android:checkableBehavior="single">
+            <item android:id="@+id/tshirt"
+                android:title="T-Shirt" />
+            <item android:id="@+id/longshirt"
+                android:title="Long Sleeve T-Shirts" />
+            <item android:id="@+id/shorts"
+                android:title="Shorts" />
+            <item android:id="@+id/pants"
+                android:title="Long Pants" />
+            <item android:id="@+id/shoes"
+                android:title="Shoes" />
+        </group>
+    </item>
+</menu>
