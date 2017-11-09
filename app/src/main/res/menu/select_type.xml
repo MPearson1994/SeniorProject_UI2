@@ -14,6 +14,8 @@
                 android:title="Long Pants" />
             <item android:id="@+id/shoes"
                 android:title="Shoes" />
+            <item android:id="@+id/other"
+                android:title="Other" />
         </group>
     </item>
 </menu>
