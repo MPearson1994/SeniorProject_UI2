@@ -58,7 +58,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/weather" />
+                    android:src="@mipmap/weather" />
 
                 <TextView
                     android:id="@+id/settingTextView"
@@ -101,10 +101,12 @@
             android:id="@+id/settings_card"
             android:layout_width="0dp"
             android:layout_height="99dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             app:cardBackgroundColor="@android:color/holo_blue_dark"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintLeft_toLeftOf="@+id/weather_card"
             app:layout_constraintRight_toRightOf="@+id/weather_card"
@@ -126,7 +128,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/settings" />
+                    android:src="@mipmap/settings" />
 
                 <TextView
                     android:id="@+id/settingTextViewVer2"
@@ -193,7 +195,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/calendar" />
+                    android:src="@mipmap/calendar" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -269,7 +271,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.508"
-                    app:srcCompat="@drawable/camera" />
+                    android:src="@mipmap/camera" />
 
                 <TextView
                     android:id="@+id/textView11"
@@ -335,7 +337,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/closet" />
+                    android:src="@mipmap/closet" />
 
                 <TextView
                     android:id="@+id/textView9"
@@ -407,7 +409,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/favorites" />
+                    android:src="@mipmap/favorites" />
 
                 <TextView
                     android:id="@+id/textView3"
