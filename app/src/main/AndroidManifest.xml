@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.myleslab.seniorproject_ui2"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="com.example.myleslab.seniorproject_ui2">
 
     <uses-permission android:name="android.permission.CAMERA" />
 
@@ -43,7 +41,9 @@
         <activity
             android:name=".ViewCloset"
             android:label="@string/title_activity_view_closet"
-            android:parentActivityName=".CardView_Menu">
+            android:parentActivityName=".CardView_Menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.myleslab.seniorproject_ui2.CardView_Menu" />
@@ -51,12 +51,20 @@
         <activity
             android:name=".WelcomeScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_welcome_screen">
+            android:label="@string/title_activity_welcome_screen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".DetailActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".ViewCloset"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+
         </activity>
     </application>
 </manifest>

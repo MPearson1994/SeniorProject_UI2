@@ -4,21 +4,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/cardView_Constraints"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/cardview_dark_background">
+        android:orientation="vertical">
 
         <android.support.v7.widget.CardView
             android:id="@+id/weather_card"
             android:layout_width="0dp"
             android:layout_height="99dp"
             android:layout_marginTop="8dp"
-            app:cardBackgroundColor="@android:color/holo_blue_dark"
+            app:cardBackgroundColor="@color/black_overlay"
             app:cardElevation="0dp"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintLeft_toLeftOf="@+id/closet_card"
@@ -54,6 +54,7 @@
                     android:text="Weather"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:textStyle="italic"
+                    android:textColor="@android:color/white"
                     app:layout_constraintHorizontal_bias="0.503"
                     app:layout_constraintLeft_toRightOf="@+id/weather_image"
                     app:layout_constraintRight_toRightOf="parent"
@@ -68,6 +69,7 @@
                     android:layout_marginTop="4dp"
                     android:fontFamily="serif-monospace"
                     android:text="@string/cardView_Weather_Card"
+                    android:textColor="@android:color/white"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     app:layout_constraintBottom_toBottomOf="@+id/weather_image"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -84,7 +86,7 @@
             android:id="@+id/settings_card"
             android:layout_width="0dp"
             android:layout_height="99dp"
-            app:cardBackgroundColor="@android:color/holo_blue_dark"
+            app:cardBackgroundColor="@color/black_overlay"
             app:cardElevation="0dp"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="@+id/weather_card"
@@ -112,7 +114,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@mipmap/settings" />
+                    android:src="@mipmap/settings" />
 
                 <TextView
                     android:id="@+id/settings_TextView"
@@ -124,6 +126,7 @@
                     android:fontFamily="monospace"
                     android:text="Settings"
                     android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="@android:color/white"
                     android:textStyle="italic"
                     app:layout_constraintHorizontal_bias="0.503"
                     app:layout_constraintLeft_toRightOf="@+id/settings_image"
@@ -142,6 +145,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     app:layout_constraintBottom_toBottomOf="@+id/settings_image"
                     app:layout_constraintHorizontal_bias="0.0"
+                    android:textColor="@android:color/white"
                     app:layout_constraintLeft_toRightOf="@+id/settings_image"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/settings_TextView"
@@ -156,7 +160,7 @@
             android:layout_width="357dp"
             android:layout_height="99dp"
             android:layout_marginTop="8dp"
-            app:cardBackgroundColor="@android:color/holo_blue_dark"
+            app:cardBackgroundColor="@color/black_overlay"
             app:cardElevation="0dp"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintLeft_toLeftOf="@+id/closet_card"
@@ -179,7 +183,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@mipmap/calendar" />
+                    android:src="@mipmap/calendar" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -192,6 +196,7 @@
                     android:text="Schedule Outfit"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     app:layout_constraintHorizontal_bias="1.0"
+                    android:textColor="@android:color/white"
                     app:layout_constraintLeft_toRightOf="@+id/calendar_image"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/calendar_image" />
@@ -208,6 +213,7 @@
                     android:text="@string/cardView_Calendar_Card"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:textSize="14sp"
+                    android:textColor="@android:color/white"
                     app:layout_constraintBottom_toBottomOf="@+id/calendar_image"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintLeft_toRightOf="@+id/calendar_image"
@@ -228,7 +234,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            app:cardBackgroundColor="@android:color/holo_blue_dark"
+            app:cardBackgroundColor="@color/black_overlay"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -253,7 +259,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.508"
-                    app:srcCompat="@mipmap/camera" />
+                    android:src="@mipmap/camera" />
 
                 <TextView
                     android:id="@+id/textView11"
@@ -264,6 +270,7 @@
                     android:layout_marginTop="0dp"
                     android:text="Add Clothing"
                     android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="@android:color/white"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintLeft_toRightOf="@+id/camera_image"
                     app:layout_constraintRight_toRightOf="parent"
@@ -282,6 +289,7 @@
                     android:fontFamily="serif-monospace"
                     android:text="@string/cardView_Camera_Card"
                     android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="@android:color/white"
                     app:layout_constraintBottom_toBottomOf="@+id/camera_image"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintLeft_toRightOf="@+id/camera_image"
@@ -295,7 +303,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            app:cardBackgroundColor="@android:color/holo_blue_dark"
+            app:cardBackgroundColor="@color/black_overlay"
             app:layout_constraintLeft_toLeftOf="@+id/camera_card"
             app:layout_constraintRight_toRightOf="@+id/camera_card"
             app:layout_constraintTop_toBottomOf="@+id/camera_card">
@@ -317,7 +325,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@mipmap/closet" />
+                    android:src="@mipmap/closet" />
 
                 <TextView
                     android:id="@+id/textView9"
@@ -328,6 +336,7 @@
                     android:layout_marginTop="0dp"
                     android:fontFamily="monospace"
                     android:text="View Closet"
+                    android:textColor="@android:color/white"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     app:layout_constraintLeft_toRightOf="@+id/closet_image"
                     app:layout_constraintRight_toRightOf="parent"
@@ -347,6 +356,7 @@
                     android:text="@string/cardView_Closet_Card"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:textSize="18sp"
+                    android:textColor="@android:color/white"
                     app:layout_constraintBottom_toBottomOf="@+id/closet_image"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintLeft_toRightOf="@+id/closet_image"
@@ -365,7 +375,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            app:cardBackgroundColor="@android:color/holo_blue_dark"
+            app:cardBackgroundColor="@color/black_overlay"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintLeft_toLeftOf="@+id/closet_card"
             app:layout_constraintRight_toRightOf="@+id/closet_card"
@@ -387,7 +397,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@mipmap/favorites" />
+                    android:src="@mipmap/favorites" />
 
                 <TextView
                     android:id="@+id/textView10"
@@ -399,6 +409,7 @@
                     android:fontFamily="monospace"
                     android:text="View Favorites"
                     android:textAllCaps="false"
+                    android:textColor="@android:color/white"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     app:layout_constraintHorizontal_bias="0.502"
                     app:layout_constraintLeft_toRightOf="@+id/favorites_image"
@@ -415,6 +426,7 @@
                     android:text="@string/cardView_Favorites_Card"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     app:layout_constraintHorizontal_bias="0.0"
+                    android:textColor="@android:color/white"
                     app:layout_constraintLeft_toRightOf="@+id/favorites_image"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView10"
