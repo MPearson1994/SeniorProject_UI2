@@ -12,12 +12,13 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/welcomescreen"
+        android:background="@drawable/welcomescreen"
         android:scaleType="fitXY"/>
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
 
     <FrameLayout
+        android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true">
@@ -26,7 +27,7 @@
             android:id="@+id/fullscreen_content_controls"
             style="?metaButtonBarStyle"
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+            android:layout_height="91dp"
             android:layout_gravity="bottom|center_horizontal"
             android:background="@color/black_overlay"
             android:orientation="horizontal"

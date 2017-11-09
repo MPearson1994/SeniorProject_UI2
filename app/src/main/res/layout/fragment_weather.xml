@@ -9,31 +9,12 @@
     tools:context="com.example.myleslab.seniorproject_ui2.WeatherFragment">
 
     <TextView
-        android:id="@+id/details_field"
+        android:id="@+id/city_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/weather_icon"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/current_temperature_field"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="40sp" />
-
-    <TextView
-        android:id="@+id/weather_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="48dp"
-        android:layout_toStartOf="@+id/details_field"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="70sp" />
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/updated_field"
@@ -45,11 +26,30 @@
         android:textSize="13sp" />
 
     <TextView
-        android:id="@+id/city_field"
+        android:id="@+id/weather_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="190sp" />
+
+    <TextView
+        android:id="@+id/current_temperature_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/details_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weather_icon"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
 
 </RelativeLayout>
