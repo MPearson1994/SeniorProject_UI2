@@ -1,5 +1,6 @@
 package com.example.myleslab.seniorproject_ui2;
 
+import android.annotation.SuppressLint;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
@@ -76,6 +77,7 @@ public class WeatherFragment extends Fragment {
         }.start();
     }
 
+    @SuppressLint({"SetTextI18n", "DefaultLocale"})
     private void renderWeather(JSONObject json){
         try {
             cityField.setText(json.getString("name").toUpperCase(Locale.US) +

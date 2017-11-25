@@ -24,6 +24,30 @@ public class CardView_Menu extends Activity {
         cameraCard = (CardView) findViewById(R.id.camera_card);
         closetCard = (CardView) findViewById(R.id.closet_card);
 
+        cameraCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nScreen = new Intent(CardView_Menu.this, Camera.class);
+                startActivity(nScreen);
+            }
+        });
+
+        weatherCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nScreen = new Intent( CardView_Menu.this, Weather.class);
+                startActivity(nScreen);
+            }
+        });
+
+        closetCard.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                nScreen = new Intent(CardView_Menu.this, ViewCloset.class);
+                startActivity(nScreen);
+            }
+        });
+
         calendarCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,28 +69,5 @@ public class CardView_Menu extends Activity {
             }
         });
 
-        cameraCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                nScreen = new Intent(CardView_Menu.this, Camera.class);
-                startActivity(nScreen);
-            }
-        });
-
-        weatherCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                nScreen = new Intent( CardView_Menu.this, Weather.class);
-                startActivity(nScreen);
-            }
-        });
-
-        closetCard.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                nScreen = new Intent(CardView_Menu.this, ViewClothing.class);
-                startActivity(nScreen);
-            }
-        });
     }
 }

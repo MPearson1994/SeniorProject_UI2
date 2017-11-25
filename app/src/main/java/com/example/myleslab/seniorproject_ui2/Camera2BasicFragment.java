@@ -64,6 +64,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -772,9 +774,16 @@ public class Camera2BasicFragment extends Fragment
      */
     private void takePicture() {
         lockFocus();
-        int date = new Date().getDate();
-        mFile = new File(getActivity().getExternalFilesDir(null),"pic_"+ this.fileOption+ "_"+ date +".jpg"); //Creates file and Names it
+        Date date = new Date();
+        if (fileOption == null){
+            fileOption = "other";
+        }
+        DateFormat formatter = new SimpleDateFormat("ddMMHHmmss");
+        mFile = new File(getContext().getExternalFilesDir(null),"pic_"
+                + this.fileOption + "_"+ formatter.format(date) +".jpg"); //Creates file and Names it
     }
+
+
 
     /**
      * Lock the focus as the first step for a still image capture.

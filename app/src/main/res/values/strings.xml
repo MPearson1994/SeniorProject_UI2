@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Main Menu Card View TAB -->
     <string name="cardView_Weather_Card">
         Concerned about the weather in your area? Check to see what attire is best for the weather.
@@ -63,7 +63,15 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_view_clothing">ViewClothing</string>
+
+    <!-- Titles -->
+    <string name="title_card_flip">Card Flip</string>
+
+    <!-- Accessibility-only descriptions -->
+    <string name="description_image_1">Image 1</string>
+    <string name="description_image_2">Image 2</string>
+    <string name="description_zoom_touch_close">Expanded image (touch to close)</string>
+
     <string name="action_settings">Settings</string>
-
-
 </resources>
