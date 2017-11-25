@@ -54,6 +54,11 @@ public class Camera extends AppCompatActivity{
                 if(item.isChecked())item.setChecked(false);
                 else item.setChecked(true);
                 return true;
+            case R.id.other:
+                camera2BasicFragment.fileOption = "other";
+                if(item.isChecked())item.setChecked(true);
+                else item.setChecked(true);
+                return true;
             default:
                 camera2BasicFragment.fileOption = "other";
                 return super.onOptionsItemSelected(item);
