@@ -778,11 +778,19 @@ public class Camera2BasicFragment extends Fragment
         if (fileOption == null){
             fileOption = "other";
         }
+
         DateFormat formatter = new SimpleDateFormat("ddMMHHmmss");
+
         mFile = new File(getContext().getExternalFilesDir(null),"pic_"
                 + this.fileOption + "_"+ formatter.format(date) +".jpg"); //Creates file and Names it
+
+        sendData(mFile);
     }
 
+    public void sendData(File mFile){
+        MessageSender messageSender = new MessageSender(this.getContext());
+        messageSender.execute(mFile.getAbsolutePath());
+    }
 
 
     /**
