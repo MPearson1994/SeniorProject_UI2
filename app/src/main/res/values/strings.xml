@@ -74,4 +74,9 @@
     <string name="description_zoom_touch_close">Expanded image (touch to close)</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- Calendar Strings -->
+    <string name="hello">Open calendar</string>
+    <string name="open">Open</string>
+
 </resources>
