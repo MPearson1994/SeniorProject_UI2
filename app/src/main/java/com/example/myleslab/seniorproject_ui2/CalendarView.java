@@ -22,7 +22,7 @@ public class CalendarView extends Activity {
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.calendar_options);
+        setContentView(R.layout.calendar);
         month = Calendar.getInstance();
         onNewIntent(getIntent());
 
@@ -87,7 +87,7 @@ public class CalendarView extends Activity {
     }
 
     public void refreshCalendar(){
-        TextView title = (TextView) findViewById(R.id.title);
+        TextView title = (TextView) findViewById(R.id.calendar_title);
 
         adapter.refreshDays();
         adapter.notifyDataSetChanged();
@@ -96,11 +96,11 @@ public class CalendarView extends Activity {
         title.setText(android.text.format.DateFormat.format("MMMM yyyy", month));
     }
 
-    public void onNewIntnet(Intent intent){
+    public void onNewIntent(Intent intent){
         String date = intent.getStringExtra("date");
         String[] dateArray = date.split("-"); // Date format is yyyy-mm-dd
 
-        month.set(Integer.parseInt(dateArray[2]), Integer.parseInt(dateArray[1]), Integer.parseInt(dateArray[0]));
+        month.set(Integer.parseInt(dateArray[0]), Integer.parseInt(dateArray[1]), Integer.parseInt(dateArray[2]));
     }
 
     public Runnable calendarUpdater = new Runnable() {

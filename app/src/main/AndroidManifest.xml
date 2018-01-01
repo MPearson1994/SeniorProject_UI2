@@ -28,7 +28,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
         <activity
-            android:name=".CalendarView"
+            android:name=".CalendarViewActivity"
             android:label="Intelligent Closet Assistant"
             android:parentActivityName=".CardView_Menu"
             android:screenOrientation="portrait"
@@ -49,6 +49,11 @@
             android:name=".ViewCloset"
             android:label="@string/app_name"
             android:parentActivityName=".CardView_Menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity android:name=".CalendarView"
+            android:label="@string/app_name"
+            android:parentActivityName=".CalendarViewActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
         <activity
